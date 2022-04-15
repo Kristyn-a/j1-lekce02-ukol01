@@ -11,8 +11,8 @@ public class HlavniProgram {
 
         nakresliPrasatko(zofka);
     }
-
     private void nakresliPrasatko(Turtle zofka) {
+
         zofka.move(60);
         zofka.turnRight(90);
         zofka.move(100);
@@ -53,7 +53,18 @@ public class HlavniProgram {
         zofka.turnRight(120);
         zofka.move(60);
 
-        nakresliPrasatko(zofka);
+        zofka.penUp();
+        zofka.turnLeft(180);
+        zofka.move(60);
+        zofka.turnLeft(60);
+        zofka.move(300);
+        zofka.turnRight(90);
+        zofka.penDown();
+
+        for (int i = 0; i < 2; i++) {
+            nakresliPrasatko(zofka);
+        }
+
     }
 }
 
