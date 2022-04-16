@@ -57,24 +57,11 @@ public class HlavniProgram {
 //        zofka.turnLeft(180);
 //        zofka.move(60);
 //        zofka.turnLeft(60);
-//        zofka.move(300);
-//        zofka.turnRight(90);
-//        zofka.penDown();
-//
-
-//        zofka.penUp();
-//        zofka.turnLeft(90);
-//        zofka.move(400);
+//        zofka.move(200);
 //        zofka.turnRight(90);
 //        zofka.move(200);
 //        zofka.penDown();
 
-        zofka.penUp();
-        zofka.turnLeft(90);
-        zofka.move(400);
-        zofka.turnRight(90);
-        zofka.move(200);
-        zofka.penDown();
 
         for (int i = 0; i < 48; i++) {
               zofka.move(2);
@@ -82,7 +69,9 @@ public class HlavniProgram {
         }
 
         paprsekSlunicka(zofka);
+
     }
+
     private void paprsekSlunicka(Turtle zofka) {
         zofka.turnLeft(90);
         zofka.move(15);
@@ -90,51 +79,31 @@ public class HlavniProgram {
         zofka.turnLeft(180);
         zofka.move(15);
         zofka.turnLeft(90);
-
         for (int i = 0; i < 4; i++) {
             zofka.move(2);
             zofka.turnRight(7.5);
         }
-
         zofka.penDown();
+        for (int i = 1; i < 12; i++) {
+            paprsekSlunicka(zofka);
 
-        paprsekSlunicka(zofka);
+        }
+//
+//    }
 
-        zofka.penUp();
-        zofka.turnLeft(90);
-        zofka.move(350);
-        zofka.turnRight(90);
-        zofka.move(100);
-        zofka.penDown();
+//        zofka.turnRight(90);
+//        zofka.move(40);
+//        zofka.turnRight(90);
+//        zofka.move(60);
+//        zofka.turnRight(90);
+//        zofka.move(40);
+//        zofka.turnRight(90);
+//        zofka.move(60);
+//        zofka.turnRight(30);
+//        zofka.move(40);
+//        zofka.turnRight(120);
+//        zofka.move(40);
+//
+//    }
 
-        postavenyDomecek(zofka);
-
-        mezeraUdomecku(zofka);
-    }
-
-    private void mezeraUdomecku(Turtle zofka) {
-        zofka.penUp();
-        zofka.turnRight(30);
-        zofka.move(60);
-        zofka.turnLeft(90);
-        zofka.move(80);
-        zofka.penDown();
-    }
-
-    private void postavenyDomecek(Turtle zofka) {
-        zofka.turnRight(90);
-        zofka.move(40);
-        zofka.turnRight(90);
-        zofka.move(60);
-        zofka.turnRight(90);
-        zofka.move(40);
-        zofka.turnRight(90);
-        zofka.move(60);
-        zofka.turnRight(30);
-        zofka.move(40);
-        zofka.turnRight(120);
-        zofka.move(40);
-
-    }
 }
-
